@@ -10,6 +10,8 @@ use yii\filters\VerbFilter;
 use app\models\LoginForm;
 use app\models\ContactForm;
 
+use app\models\MouseForm;
+
 class SiteController extends Controller
 {
     /**
@@ -121,8 +123,13 @@ class SiteController extends Controller
      *
      * @return string
      */
-    public function actionAbout()
+    public function actionMouse($animal = 'мыши')
     {
-        return $this->render('about');
+        $model = new MouseForm();
+        if ($model->load(Yii::$app->request->post())&& $model->validate()){
+            return $this->render('form-result',['model' => $model]);
+        } else
+        return $this->render('form',['model' => $model]);
+        
     }
 }
