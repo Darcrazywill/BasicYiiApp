@@ -47,7 +47,8 @@ $config = [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [
-                'contact' => 'site/contact'
+                'contact' => 'site/contact',
+                'mouse' => 'site/form'
             ],
         ],
         
