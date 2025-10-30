@@ -48,7 +48,8 @@ $config = [
             'showScriptName' => false,
             'rules' => [
                 'contact' => 'site/contact',
-                'mouse' => 'site/form'
+                'mouse' => 'site/form',
+                'user' => 'user/index'
             ],
         ],
         
