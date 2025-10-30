@@ -49,7 +49,8 @@ $config = [
             'rules' => [
                 'contact' => 'site/contact',
                 'mouse' => 'site/form',
-                'user'=> 'user/index'
+                'user'=> 'user/index',
+                'feedback' => 'feedback/index'
             ],
         ],
         
