@@ -15,7 +15,7 @@ class FeedbackController extends Controller
         $submittedData = [];
 
         if ($model->load(Yii::$app->request->post()) && $model->validate()) {
-            // Сохранение данных (здесь можно добавить логику сохранения в БД)
+
             $submittedData = [
                 'name' => $model->name,
                 'email' => $model->email,
@@ -23,8 +23,6 @@ class FeedbackController extends Controller
             ];
             
             $success = true;
-            
-            // Сброс формы после успешной отправки
             $model = new FeedbackForm();
         }
 

@@ -50,7 +50,8 @@ $config = [
                 'contact' => 'site/contact',
                 'mouse' => 'site/form',
                 'user'=> 'user/index',
-                'feedback' => 'feedback/index'
+                'feedback' => 'feedback/index',
+                'wish'=>'wish/index'
             ],
         ],
         
